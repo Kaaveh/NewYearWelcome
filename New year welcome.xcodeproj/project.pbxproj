@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE27CAEB293E3AD90092D20A /* New_year_welcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27CAEA293E3AD90092D20A /* New_year_welcomeTests.swift */; };
+		CE27CAF5293E3B660092D20A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27CAF4293E3B660092D20A /* MainViewModel.swift */; };
+		CE27CAF7293E3E440092D20A /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27CAF6293E3E440092D20A /* EmojiView.swift */; };
 		CED3659B293D18EC00DCAE75 /* New_year_welcomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3659A293D18EC00DCAE75 /* New_year_welcomeApp.swift */; };
 		CED3659D293D18EC00DCAE75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3659C293D18EC00DCAE75 /* ContentView.swift */; };
 		CED3659F293D18EE00DCAE75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED3659E293D18EE00DCAE75 /* Assets.xcassets */; };
 		CED365A2293D18EE00DCAE75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED365A1293D18EE00DCAE75 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE27CAEC293E3AD90092D20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED3658F293D18EC00DCAE75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED36596293D18EC00DCAE75;
+			remoteInfo = "New year welcome";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE27CAE8293E3AD90092D20A /* New year welcomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "New year welcomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE27CAEA293E3AD90092D20A /* New_year_welcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_year_welcomeTests.swift; sourceTree = "<group>"; };
+		CE27CAF4293E3B660092D20A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CE27CAF6293E3E440092D20A /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		CED36597293D18EC00DCAE75 /* New year welcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New year welcome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3659A293D18EC00DCAE75 /* New_year_welcomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_year_welcomeApp.swift; sourceTree = "<group>"; };
 		CED3659C293D18EC00DCAE75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE27CAE5293E3AD90092D20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED36594293D18EC00DCAE75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +56,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE27CAE9293E3AD90092D20A /* New year welcomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE27CAEA293E3AD90092D20A /* New_year_welcomeTests.swift */,
+			);
+			path = "New year welcomeTests";
+			sourceTree = "<group>";
+		};
+		CE27CAF1293E3AF10092D20A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE27CAF3293E3B420092D20A /* MainScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE27CAF2293E3AFD0092D20A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CE27CAF3293E3B420092D20A /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CED3659C293D18EC00DCAE75 /* ContentView.swift */,
+				CE27CAF4293E3B660092D20A /* MainViewModel.swift */,
+				CE27CAF6293E3E440092D20A /* EmojiView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		CED3658E293D18EC00DCAE75 = {
 			isa = PBXGroup;
 			children = (
 				CED36599293D18EC00DCAE75 /* New year welcome */,
+				CE27CAE9293E3AD90092D20A /* New year welcomeTests */,
 				CED36598293D18EC00DCAE75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CED36597293D18EC00DCAE75 /* New year welcome.app */,
+				CE27CAE8293E3AD90092D20A /* New year welcomeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +110,9 @@
 		CED36599293D18EC00DCAE75 /* New year welcome */ = {
 			isa = PBXGroup;
 			children = (
+				CE27CAF2293E3AFD0092D20A /* Domain */,
+				CE27CAF1293E3AF10092D20A /* View */,
 				CED3659A293D18EC00DCAE75 /* New_year_welcomeApp.swift */,
-				CED3659C293D18EC00DCAE75 /* ContentView.swift */,
 				CED3659E293D18EE00DCAE75 /* Assets.xcassets */,
 				CED365A0293D18EE00DCAE75 /* Preview Content */,
 			);
@@ -70,6 +130,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE27CAE7293E3AD90092D20A /* New year welcomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE27CAF0293E3AD90092D20A /* Build configuration list for PBXNativeTarget "New year welcomeTests" */;
+			buildPhases = (
+				CE27CAE4293E3AD90092D20A /* Sources */,
+				CE27CAE5293E3AD90092D20A /* Frameworks */,
+				CE27CAE6293E3AD90092D20A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE27CAED293E3AD90092D20A /* PBXTargetDependency */,
+			);
+			name = "New year welcomeTests";
+			productName = "New year welcomeTests";
+			productReference = CE27CAE8293E3AD90092D20A /* New year welcomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CED36596293D18EC00DCAE75 /* New year welcome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED365A5293D18EE00DCAE75 /* Build configuration list for PBXNativeTarget "New year welcome" */;
@@ -97,6 +175,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					CE27CAE7293E3AD90092D20A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CED36596293D18EC00DCAE75;
+					};
 					CED36596293D18EC00DCAE75 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -116,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				CED36596293D18EC00DCAE75 /* New year welcome */,
+				CE27CAE7293E3AD90092D20A /* New year welcomeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE27CAE6293E3AD90092D20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED36595293D18EC00DCAE75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +223,78 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE27CAE4293E3AD90092D20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE27CAEB293E3AD90092D20A /* New_year_welcomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED36593293D18EC00DCAE75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CED3659D293D18EC00DCAE75 /* ContentView.swift in Sources */,
+				CE27CAF7293E3E440092D20A /* EmojiView.swift in Sources */,
 				CED3659B293D18EC00DCAE75 /* New_year_welcomeApp.swift in Sources */,
+				CE27CAF5293E3B660092D20A /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE27CAED293E3AD90092D20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED36596293D18EC00DCAE75 /* New year welcome */;
+			targetProxy = CE27CAEC293E3AD90092D20A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CE27CAEE293E3AD90092D20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaaveh.ir.New-year-welcomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/New year welcome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/New year welcome";
+			};
+			name = Debug;
+		};
+		CE27CAEF293E3AD90092D20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaaveh.ir.New-year-welcomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/New year welcome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/New year welcome";
+			};
+			name = Release;
+		};
 		CED365A3293D18EE00DCAE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE27CAF0293E3AD90092D20A /* Build configuration list for PBXNativeTarget "New year welcomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE27CAEE293E3AD90092D20A /* Debug */,
+				CE27CAEF293E3AD90092D20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CED36592293D18EC00DCAE75 /* Build configuration list for PBXProject "New year welcome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
