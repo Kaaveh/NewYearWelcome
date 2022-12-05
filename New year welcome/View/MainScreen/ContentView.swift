@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel = MainViewModel()
+    @StateObject var viewModel = MainViewModel()
     
     var body: some View {
         VStack {
